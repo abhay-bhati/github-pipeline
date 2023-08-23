@@ -15,5 +15,5 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag docker-image-aws:latest
+      run: docker build . --file Dockerfile --latest docker-image-aws:$(date +%s)
      
